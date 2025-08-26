@@ -60,7 +60,7 @@ const Navbar = () => {
       </div>
 
       {/* Spacer supaya body tidak ketiban navbar */}
-      <div className="mb-32"></div>
+      <div className="mb-28"></div>
     </>
   );
 };
