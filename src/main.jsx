@@ -4,6 +4,7 @@ import "./index.css";
 import App from "./App.jsx";
 import Navbar from "./components/Navbar.jsx";
 import Aurora from "./components/Aurora.jsx"; // import aurora
+import Footer from "./components/footer.jsx";
 
 import "remixicon/fonts/remixicon.css";
 
@@ -19,10 +20,15 @@ createRoot(document.getElementById("root")).render(
       />
 
       {/* Konten utama */}
-      <div className="container mx-auto px-4 relative z-10">
+      <div className="relative z-10">
         <Navbar />
-        <App />
+        <div className="container mx-auto px-4 scale-95">
+  <App />
+</div>
+
+        <Footer />
       </div>
     </div>
   </StrictMode>
 );
+

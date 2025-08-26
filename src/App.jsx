@@ -19,7 +19,7 @@ function App() {
   return (
     <>
       {/* Hero */}
-<div className="hero grid md:grid-cols-2 items-center pt-10 xl:gap-0 gap-6 grid-cols-1">
+<div id="hero" className="hero grid md:grid-cols-2 items-center pt-10 xl:gap-0 gap-6 grid-cols-1">
   <div data-aos="fade-right" data-aos-duration="1500" data-aos-easing="ease-in-out">
     <h1 className="text-4xl/snug font-bold leading-tight">
       Hi, Saya Fatimah Azzahra 👋
@@ -58,7 +58,7 @@ function App() {
 
 
       {/* Pengalaman Organisasi */}
-      <div className="pengalaman mt-32" data-aos="fade-up">
+      <div id="organisasi" className="pengalaman mt-32" data-aos="fade-up">
         <h1 className="text-3xl font-bold mb-4 text-center">
           Pengalaman Organisasi
         </h1>
@@ -90,7 +90,7 @@ function App() {
       </div>
 
       {/* Pengalaman Proyek */}
-      <div className="proyek mt-32" data-aos="fade-up">
+      <div id="proyek" className="proyek mt-32" data-aos="fade-up">
         <h1 className="text-3xl font-bold mb-4 text-center">Pengalaman Proyek</h1>
         <p className="text-center text-base opacity-50 mb-10 max-w-2xl mx-auto">
           Berikut ini beberapa proyek yang pernah saya kerjakan.
@@ -121,7 +121,7 @@ function App() {
       </div>
 
       {/* Tools */}
-<div className="tools mt-20 mb-16" data-aos="fade-up">
+<div id="tools" className="tools mt-32" data-aos="fade-up">
   <h1 className="text-2xl font-bold mb-3 text-center">Tools</h1>
   <p className="text-center text-sm opacity-60 mb-8 max-w-xl mx-auto">
     Berikut ini beberapa tools yang pernah saya gunakan.

@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { Link } from "react-scroll";
 
 const Navbar = () => {
   const [active, setActive] = useState(false);
@@ -18,6 +19,13 @@ const Navbar = () => {
     };
   }, []);
 
+  const menu = [
+    { id: 1, name: "Tentang", link: "hero" },
+    { id: 2, name: "Pengalaman", link: "organisasi" },
+    { id: 3, name: "Proyek", link: "proyek" },
+    { id: 4, name: "Kemampuan", link: "tools" },
+  ];
+
   return (
     <>
       {/* Navbar */}
@@ -27,7 +35,7 @@ const Navbar = () => {
         shadow-[0_0_10px_rgba(255,255,255,0.2)]"
       >
         <div className="w-full max-w-screen-xl mx-auto flex items-center justify-between px-6 md:px-12">
-          {/* Logo (hanya tampil di md ke atas) */}
+          {/* Logo */}
           <div className="logo hidden md:block">
             <h1 className="text-xl font-semibold text-white">
               Fatimah Azzahra
@@ -41,18 +49,22 @@ const Navbar = () => {
             transition-all md:transition-none
             ${active ? "top-0 opacity-100" : "top-0 opacity-100"}`}
           >
-            {["Tentang", "Pengalaman", "Proyek", "Kemampuan"].map((item) => (
-              <li key={item}>
-                <a
-                  href="#"
+            {menu.map((item) => (
+              <li key={item.id}>
+                <Link
+                  to={item.link}
+                  smooth={true}
+                  duration={500}
+                  offset={-80} // supaya tidak ketutup navbar
                   className="relative sm:text-base text-sm font-medium text-white 
-                  after:content-[''] after:absolute after:left-0 after:-bottom-1 
-                  after:w-full after:h-[2px] after:bg-white 
-                  after:scale-x-0 after:origin-left after:transition-transform after:duration-300 
-                  hover:after:scale-x-100"
+                    cursor-pointer
+                    after:content-[''] after:absolute after:left-0 after:-bottom-1 
+                    after:w-full after:h-[2px] after:bg-white 
+                    after:scale-x-0 after:origin-left after:transition-transform after:duration-300 
+                    hover:after:scale-x-100"
                 >
-                  {item}
-                </a>
+                  {item.name}
+                </Link>
               </li>
             ))}
           </ul>
@@ -60,7 +72,7 @@ const Navbar = () => {
       </div>
 
       {/* Spacer supaya body tidak ketiban navbar */}
-      <div className="mb-28"></div>
+      <div className="mb-10"></div>
     </>
   );
 };
