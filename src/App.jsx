@@ -39,7 +39,7 @@ function App() {
       <a
         href="./assets/CV-Fatimah Azzahra.pdf"
         download
-        className="bg-[#3B38A0] p-4 rounded-2xl hover:bg-[#7A85C1]"
+        className="bg-[#3B38A0] p-4 rounded-2xl hover:bg-[#7A85C1] shadow-[0_0_10px_rgba(255,255,255,0.2)]"
       >
         Download CV <i className="ri-download-2-line ri-lg"></i>
       </a>
