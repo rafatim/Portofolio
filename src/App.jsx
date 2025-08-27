@@ -90,35 +90,37 @@ function App() {
       </div>
 
       {/* Pengalaman Proyek */}
-      <div id="proyek" className="proyek mt-32" data-aos="fade-up">
-        <h1 className="text-3xl font-bold mb-4 text-center">Pengalaman Proyek</h1>
-        <p className="text-center text-base opacity-50 mb-10 max-w-2xl mx-auto">
-          Berikut ini beberapa proyek yang pernah saya kerjakan.
-        </p>
+<div id="proyek" className="proyek mt-32" data-aos="fade-up">
+  <h1 className="text-3xl font-bold mb-4 text-center">Pengalaman Proyek</h1>
+  <p className="text-center text-base opacity-50 mb-10 max-w-2xl mx-auto">
+    Berikut ini beberapa proyek yang pernah saya kerjakan.
+  </p>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {listProyek.map((proyek) => (
-            <a
-              key={proyek.id}
-              href={proyek.link}
-              target="_blank"
-              rel="noopener noreferrer"
-              data-aos="fade-up" // animasi sama
-              className="bg-zinc-800 p-5 rounded-xl shadow-md hover:shadow-lg 
-              transition-all duration-300 block"
-            >
-              <img
-                src={proyek.gambar}
-                alt={proyek.nama}
-                className="w-full h-40 object-cover rounded-lg mb-4"
-              />
-              <h2 className="text-lg font-bold">{proyek.nama}</h2>
-              <h3 className="text-[#3B38A0] font-semibold">{proyek.tahun}</h3>
-              <p className="text-sm opacity-70 mt-2 line-clamp-3">{proyek.deskripsi}</p>
-            </a>
-          ))}
-        </div>
-      </div>
+  <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+    {listProyek.map((proyek) => (
+      <a
+        key={proyek.id}
+        href={proyek.link}
+        target="_blank"
+        rel="noopener noreferrer"
+        data-aos="fade-up"
+        className="bg-zinc-800 p-6 rounded-xl shadow-md hover:shadow-lg 
+        transition-all duration-300 block min-h-[320px] flex flex-col"
+      >
+        <img
+          src={proyek.gambar}
+          alt={proyek.nama}
+          className="w-full h-52 object-cover rounded-lg mb-4"
+        />
+        <h2 className="text-lg font-bold">{proyek.nama}</h2>
+        <h3 className="text-[#3B38A0] font-semibold">{proyek.tahun}</h3>
+        <p className="text-sm opacity-70 mt-2 line-clamp-4">
+          {proyek.deskripsi}
+        </p>
+      </a>
+    ))}
+  </div>
+</div>
 
       {/* Tools */}
 <div id="tools" className="tools mt-32" data-aos="fade-up">

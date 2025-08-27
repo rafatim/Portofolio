@@ -153,7 +153,7 @@ export const listProyek =[
   id: 4,
   nama: "Figma Desktop Zebra",
   tahun: "2024",
-  deskripsi: "Desain UI/UX untuk dashboard aplikasi manajemen proyek berbasis web dengan tampilan modern dan user-friendly.",
+  deskripsi: "Merancang UI/UX dashboard aplikasi manajemen proyek berbasis web dengan mengembangkan tampilan web Zebra yang sudah ada agar lebih modern dan user-friendly.",
   gambar: Proyek4,
   link: "https://www.figma.com/design/9Jo21pSNHmF5wjNwE9pufy/Untitled?node-id=24-167&t=s5YqEkDrKxZsc2o6-1",
 },
