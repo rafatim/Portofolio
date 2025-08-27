@@ -22,7 +22,7 @@ function App() {
 <div id="hero" className="hero grid md:grid-cols-2 items-center pt-10 xl:gap-0 gap-6 grid-cols-1">
   <div data-aos="fade-right" data-aos-duration="1500" data-aos-easing="ease-in-out">
     <h1 className="text-4xl/snug font-bold leading-tight">
-      Hi, Saya Fatimah Azzahra 👋
+      Hi, Saya Fatimah Azzahra
     </h1>
     <p className="text-2xl font-medium mt-3 mb-3">
       Web Developer & UI/UX Design
